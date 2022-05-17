@@ -1,0 +1,105 @@
+.pok__title{
+	text-align: center;
+}
+
+.container{
+	display: flex;
+	padding: 1rem;
+}
+.sidebar{
+	width: 20%;
+}
+.main-content{
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.pokemons{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 1rem;
+}
+.cat__list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 1rem;
+}
+.cat__item{
+	cursor: pointer;
+	font-size: 18px;
+
+}
+.cat__item:hover{
+	font-weight: bold;
+}
+.active{
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: bold;
+}
+.search{
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	margin: 1rem 1rem 4rem 1rem;
+	position: relative;
+
+}
+.search__input{
+	width: 100%;
+	font-size: 14px;
+	padding: .8rem 0 .8rem .8rem;
+	border-radius: 10px;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	outline: none;
+}
+.autocomplete{
+	position: absolute;
+	left: 0;
+	top: 50px;
+	width: 100%;
+	background-color: white;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	z-index: 100;
+	max-height: 240px;
+	height: auto;
+	overflow: auto;
+}
+.autocomplete__item{
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+.autocomplete__item span{
+	font-size: 18px;
+}
+.autocomplete__item:hover{
+	background-color: rgb(194, 194, 194);
+	cursor: pointer;
+	transition: .3s ease;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-ms-transition: .3s ease;
+	-o-transition: .3s ease;
+}
+
+.search__btn{
+	border: none;
+	background-color: rgba(41, 99, 223, 0.889);
+	color: white;
+	padding: 0 .8rem 0rem .5rem;
+	font-weight: 500;
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	cursor: pointer;
+}
+.disabled{
+	background-color: gray;
+}

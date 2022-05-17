@@ -1,0 +1,17 @@
+.pagination-btn{
+	border: 1px solid rgb(137, 137, 137);
+	padding: 0.4rem .8rem;
+	color: blue;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: white;
+}
+
+.pagination-btn:hover{
+	background-color: rgb(228, 228, 228);
+}
+
+
+.pagination {
+	margin: 1rem 0;
+}
